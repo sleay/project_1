@@ -1,0 +1,259 @@
+@import url('./common.css');
+
+.slide_img{
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+}
+.slide_img > h2{
+    position: absolute;
+    left: 50%;
+    top: 6.5%;
+    transform: translateX(-50%);
+    font: 30px "serif_bold";
+    color: #fff;
+    z-index: 1;
+}
+.slide_img > div{
+    position: relative;
+}
+.slide_img > div >p{
+    background-color: #000;
+}
+.slide_img > div > p >img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.mainimg{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-47%);
+
+}
+.mainimg >img{
+    width: 66%;
+    height: 100%;
+    display: block;
+    border: solid 1px #fff;
+    border-left: none;
+}
+.mainimg >div{
+    width: 15%;
+    height: 400px;
+    margin-left: 40px;
+    overflow: auto;
+
+}
+
+.mainimg >div >h3{
+    font: 30px "san_serif_bold";
+    color: #fff;
+    margin-bottom: 50px;
+}
+.mainimg >div >p{
+    font: 14px "san_serif_medium";
+    color: #fff;
+    line-height: 40px;
+}
+
+img.icon{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 66px;
+    border: none;
+    right: 13%;
+    top: 40%;
+    z-index: 1;
+
+    
+}
+
+.content-2{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #FBFBFB;
+}
+.content-2 >ul{
+    width: 100%;
+    padding: 220px 0 230px;
+}
+.content-2 >ul >li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    
+}
+.content-2 >ul >li >img{
+    display: block;
+}
+.content-2 >ul >li:nth-of-type(2) > img:nth-of-type(1){
+    order: 2;
+}
+.content-2 >ul >li:nth-of-type(2) > img:nth-of-type(2){
+    order: 1;
+}
+
+div.slide_btn_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0.4);
+    /* border-radius: 35px; */
+    border: none;
+    position: fixed;
+    z-index: 999;
+    top: 56%;
+    left: 70px;
+    text-align: center;
+    
+}
+div.slide_btn_1 > span{
+    color: #fff;
+    font-size: 40px;
+}
+div.slide_btn_2 > span{
+    color: #fff;
+    font-size: 40px;
+
+}
+
+div.slide_btn_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0.4);
+    /* border-radius: 35px; */
+    border: none;
+    position: fixed;
+    z-index: 999;
+    top: 56%;
+    right: 70px;
+}
+
+
+/*
+================================================================================
+================================================================================
+================================================================================
+*/
+
+
+
+
+@media (min-width:320px) and (max-width:767px){
+
+.slide_img{
+    position: relative;
+    width: 100%;
+    margin-top: 61px;
+}
+.slide_img > h2{
+    position: relative;
+    text-align: center;
+    font: 20px "san_serif_bold";
+    padding: 20px 0;
+    color: #000;
+    z-index: 1;
+}
+.slide_img > div{
+    position: relative;
+    overflow: hidden;
+}
+.slide_img > div >p{
+    background-color: #000;
+}
+.slide_img > div > p >img{
+    width: 200%;
+    transform: translateX(-30%);
+    opacity: 0.6;
+}
+
+.mainimg{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-47%);
+
+}
+.mainimg >img{
+    display: none;
+}
+.mainimg >div{
+    width: 80%;
+    height: 200px;
+    margin:0 auto;
+    overflow: auto;
+
+}
+
+.mainimg >div >h3{
+    text-align: center;
+    font: 20px "san_serif_bold";
+    color: #fff;
+    margin-bottom: 20px;
+}
+.mainimg >div >p{
+    font: 12px "san_serif_medium";
+    color: #fff;
+    line-height: 2;
+}
+
+img.icon{
+    display: none;
+
+    
+}
+.content-2{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FBFBFB;
+    overflow: hidden;
+}
+.content-2 >ul{
+    width: 100%;
+    padding: 60px 0;
+}
+.content-2 >ul >li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* overflow: hidden; */
+
+    
+}
+.content-2 >ul >li >img{
+    display: block;
+}
+.content-2 >ul >li >img:nth-of-type(1){
+width: 28%;
+height: 100%;
+}
+.content-2 >ul >li >img:nth-of-type(2){
+    width: 68%;
+
+}
+.content-2 >ul >li:nth-of-type(2) > img:nth-of-type(1){
+    order: 2;
+}
+.content-2 >ul >li:nth-of-type(2) > img:nth-of-type(2){
+    order: 1;
+}
+
+
+
+div.slide_btn_1{display: none;}
+div.slide_btn_2{display: none;}
+}

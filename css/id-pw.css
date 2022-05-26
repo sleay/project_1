@@ -1,0 +1,96 @@
+@import url('./common.css');
+
+.margin{
+    width: 500px;
+    margin: 129px auto;
+}
+.margin > h1{
+    text-align: center;
+    margin-bottom: 104px;
+}
+.margin > h1 >a{
+    font-size: 50px;
+}
+.margin label{
+    font:normal 14px "san_serif_bold";
+    display: block;
+    margin: 25px 0 10px;
+    text-indent: 10px;
+}
+.margin > div > input{
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+    padding: 19px 0;
+    text-indent: 20px;
+    border: solid 1px #dfdfdf;
+}
+.margin > div > input:last-of-type{
+    text-indent: 0;
+    background-color: #17CBA0;
+    border: none;
+    margin-top: 25px;
+    font:normal 20px "san_serif_bold";
+    color: #fff;
+}
+.none{
+    display: none;
+}
+
+.margin > div:nth-of-type(1){
+    display: flex;
+}
+.margin > div:nth-of-type(1) > label{
+    text-align: center;
+    display: block;
+    width: 250px;
+    padding: 18px 0;
+    border: solid 1px #dfdfdf;
+}
+
+.none:nth-of-type(1):checked ~ div:nth-of-type(1) > label:nth-of-type(1){
+    border: none;
+    background-color: #dfdfdf;
+}
+.none:nth-of-type(1):checked ~ .box1{
+    display: block;
+}
+.none:nth-of-type(1):checked ~ .box2{
+    display: none;
+}
+
+
+.none:nth-of-type(2):checked ~ div:nth-of-type(1) > label:nth-of-type(2){
+    border: none;
+    background-color: #dfdfdf;
+}
+
+.none:nth-of-type(2):checked ~ .box1{
+    display: none;
+}
+.none:nth-of-type(2):checked ~ .box2{
+    display: block;
+}
+
+
+
+
+
+/*
+==========================================================================
+==========================================================================
+*/
+
+
+@media (min-width:320px) and (max-width:500px){
+    .margin{
+        width: 100%;
+    }
+    .margin > div > input{
+        width: 98%;
+
+    }
+    .margin > div:nth-of-type(1) > label{
+        width: 50%;
+    }
+}

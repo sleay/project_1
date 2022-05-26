@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="css/reservation.css">
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu" class="none">
+        <div class="gnbbox">
+            <div class="mobile">
+                <div class="menu">
+                    <label for="menu"></label>
+                    <label for="menu"></label>
+                    <label for="menu"></label>
+                </div>
+            </div>
+            <h1><a href="index.html">DAON</a></h1>
+            <nav>
+                <a href="PensionDAON.html">Pension DAON</a>
+                <a href="room.html">객실안내</a>
+                <a href="reservation.html">예약안내</a>
+                <a href="review.html">이용후기</a>
+                <a href="tour.html">주변관광지</a>
+            </nav>
+            <a class="login" href="login.html">로그인 / 회원가입</a>
+            <div class="mobile">
+                <a class="login_icon" href="login.html"></a>
+            </div>
+            <div class="m_nav">
+                <div>
+                    <a href="PensionDAON.html">인사말</a>
+                    <a href="room.html">객실안내</a>
+                    <a href="reservation.html">예약안내</a>
+                    <a href="review.html">이용후기</a>
+                    <a href="tour.html">주변관광지</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <input type="checkbox" id="check" class="none">
+        <div class="rv_banner">
+            <p>예약안내</p>
+        </div>
+
+
+
+        <div class="m_fixed">
+            <input type="submit" value="결제하기">
+        </div>
+        <div class="m_fixed2">
+            <label for="check"></label>
+            <div>
+                <p>객실</p>
+                <input list="room" placeholder="Loveyou 101호">
+                            <datalist id="room">
+                                <option>Loveyou 101호</option>
+                                <option>Loveyou 102호</option>
+                                <option>Loveyou 103호</option>
+                                <option>Loveyou 201호</option>
+                                <option>Loveyou 202호</option>
+                                <option>Onlyyou 101호</option>
+                                <option>Onlyyou 102호</option>
+                                <option>Onlyyou 103호</option>
+                                <option>Onlyyou 201호</option>
+                                <option>Onlyyou 202호</option>
+                            </datalist>
+            </div>
+            <div>
+                <p>숙박 일시</p>
+                            <input type="datetime-local">
+            </div>
+            <div class="m_flex">
+                <div>
+                    <p>성인</p>
+                    <input type="number" value="2">
+                </div>
+                <div>
+                    <p>아동</p>
+                    <input type="number" value="2">
+                </div>
+                <div>
+                    <p>유아</p>
+                    <input type="number" value="0">
+                </div>
+            </div>
+            <div>
+                <span>총금액</span>
+                <span>200.000원</span>
+            </div>
+        </div>
+
+        <section class=" content-1">
+            <h2>예약현황</h2>
+            <form action="#">
+                <div class="datebox">
+                    <div class="date">
+
+                    </div>
+                    <div class="sticky">
+                        <div>
+                            <p>객실</p>
+                            <input list="room">
+                            <datalist id="room">
+                                <option>Loveyou 101호</option>
+                                <option>Loveyou 102호</option>
+                                <option>Loveyou 103호</option>
+                                <option>Loveyou 201호</option>
+                                <option>Loveyou 202호</option>
+                                <option>Onlyyou 101호</option>
+                                <option>Onlyyou 102호</option>
+                                <option>Onlyyou 103호</option>
+                                <option>Onlyyou 201호</option>
+                                <option>Onlyyou 202호</option>
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <p>숙박 일시</p>
+                            <input type="datetime-local">
+                        </div>
+
+                        <div>
+                            <div class="btn">
+                                <p>성인</p>
+                                <input type="number" value="2">
+                            </div>
+                            <div  class="btn">
+                                <p>아동</p>
+                                <input type="number" value="2">
+                            </div>
+                            <div  class="btn">
+                                <p>유아</p>
+                                <input type="number" value="0">
+                            </div>
+                        </div>
+
+                        <div class="pay">
+                            <p>결제 금액</p>
+                            <div>
+                                <p>200.000</p>
+                                <p>
+                                    <span>회원할인</span>
+                                    <span>-20.000</span>
+                                </p>
+                            </div>
+
+                            <div>
+                                <p>
+                                    <span>총결제 금액</span>
+                                    <span>180.000</span>
+                                </p>
+                            </div>
+                        </div>
+                        <input type="submit" value="결제하기" class="buy">
+                    </div>
+
+                    <div class="text">
+                        <div>
+                            <h3>펜션 객실이용 유의사항</h3>
+                            <p>∙ 객실 추가인원: 1인당 20,000원 (※36개월까지만 유아로 인정되며 그 이상은 성인요금이 적용됩니다. 유아는 추가요금 10,000원 입니다.)
+                                ∙ 바베큐 요금: 2~4인 기본 2만원, 5~6인 3만원 (현장결제 입니다.)
+                                ∙ 주말요금 적용: 금,토,공휴일 (법정공휴일 전날)
+                                ∙ 평일요금 적용: 일요일부터 목요일
+                                ∙ 비수기와 성수기 기간은 실시간예약창을 참고해주세요.</p>
+                        </div>
+
+                        <div>
+                            <h3>펜션 환불 규정</h3>
+                            <p>※ 다온펜션의 환불규정 안내입니다. (환불규정은 공정거래 위원회 규정을 준수합니다.)
+                                ※ 눈이 오면 펜션 영업을 못하는 관계로 100%환불 가능합니다.
+                                ※ 취소요청시 기본 취소수수료 10 % 가 적용됩니다. ∙ 체크인 10일 전까지: 90%환불
+                                ∙ 체크인 7일 전까지: 90%환불 
+                                ∙ 체크인 5일 전까지: 70%환불 
+                                ∙ 체크인 3~4일 전까지: 50%환불 
+                                ∙ 체크인 2일 전까지: 20%환불 
+                                ∙ 체크인 1일 전까지: 0%환불 
+                                ∙ 체크인 당일: 0%환불</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <div class="top_footer">
+                <a href="#">홈페이지이용약관</a>
+                <a href="#">개인정보취급방침</a>
+                <a href="#">이메일수집거부</a>
+            </div>
+        </div>
+        <div>
+            <div class="bottom_footer">
+                <p>가평다온펜션 온리유(민박사업자) / 펜선지기 : 박춘하 / 사업자등록번호 : 286-11-00158/ 예약전화 010-3923-0662, 031-581-0662
+                    주소 : 경기도 가평군 가평읍 경반안로 357-187 (경반리 583-34)
+                    다온펜션 러브유(민박사업자) / 펜션지기 : 권미라 / 사업자등록번호 : 167-21-00083 / 예약전화 : 010-7238-5601
+                    주소 : 경기도 가평군 가평읍 경반안로 357-177
+                </p>
+                <p>Copyrighting@2015다온펜션 All rights Reserved<span>DESIGNED BY WEBBIT</span></p>
+                <div>
+                    <img src="images/footer.png" alt="">
+                    <img src="images/footer2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

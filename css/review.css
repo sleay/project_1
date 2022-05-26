@@ -1,0 +1,187 @@
+@import url('./common.css');
+
+.review_banner{
+    margin: 120px auto 0;
+    width: 1280px;
+    background-image: url(../images/banner/review_banner.jpg);
+    
+}
+.review_banner >p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal 30px "serif_bold";
+    background-color: rgba(0,0,0,40%);
+    padding-top: 57px;
+    padding-bottom: 56px;
+    color: #fff;
+}
+
+.evrnt_banner{
+    margin: 20px auto;
+    width: 1280px;
+}
+.m_evrnt_banner{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+    display: none;
+
+}
+.content-1{
+    width: 1280px;
+    padding: 40px;
+    margin: 0 auto 130px;
+    background-color: #FBFBFB;
+}
+table{
+    width: 100%;
+}
+tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+}
+td > div{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+}
+td > p{
+    text-align: center;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    padding: 10px 0;
+}
+
+.number{
+    width: 30%;
+    margin: 18px auto 25px;
+    text-align: center;
+    
+}
+.number > a{
+    padding: 0 21px;
+}
+.number > a:first-child{
+    padding: 0;
+}
+.number > a:last-child{
+    padding: 0;
+}
+.number > a > span{
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+
+
+
+
+
+/*
+====================================================================================
+====================================================================================
+
+*/
+
+@media (min-width:320px) and (max-width:767px){
+
+    .review_banner{
+        margin: 61px auto 0;
+        width: 100%;
+        background-image: none;
+        
+    }
+    .review_banner >p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: normal 20px "san_serif_bold";
+        background-color: transparent;
+        padding: 20px 0;
+        color: #000;
+    }
+    
+    .evrnt_banner{
+        /* margin: 20px auto;
+        width: 1280px; */
+        display: none;
+    }
+    .m_evrnt_banner{
+        display: block;
+    }
+
+    .content-1{
+        width: 100%;
+        padding: 2.5%;
+        margin: 0 auto;
+        background-color: #FBFBFB;
+    }
+    table{
+        width: 100%;
+    }
+    tr{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    td{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0px 5px 5px rgba(0,0,0,10%);
+        margin-bottom: 20px;
+        border: solid 1px #dfdfdf;
+        background-color: #fff;
+    }
+    td > div{
+        width: 50%;
+        height: 100%;
+        background-color: cadetblue;
+    }
+    td > div > img{
+        width: 100%;
+    }
+    td > p{
+        width: 50%;
+        text-align: center;
+        background-color: #fff;
+        border: none;
+        padding: 10px 0;
+    }
+    
+    .number{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px auto;
+        text-align: center;
+        
+    }
+    .number > a{
+        padding: 0 0px;
+    }
+    .number > a:nth-of-type(2){display: none;}
+    .number > a:nth-of-type(3){display: none}
+    .number > a:nth-of-type(4){display: none}
+    .number > a:first-child{
+        padding: 0;
+    }
+    .number > a:last-child{
+        padding: 0;
+    }
+
+    .number > a > span{
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgba(0,0,0,10%);
+
+    }
+
+}

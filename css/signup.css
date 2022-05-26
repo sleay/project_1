@@ -1,0 +1,143 @@
+@import url('./common.css');
+
+main{
+    margin: 0 auto;
+}
+h1.title{
+    margin: 60px auto 16px;
+    text-align: center;
+}
+h1.title > a{
+    font-size: 50px;
+}
+tr,td{
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: 0 auto;   
+    border-collapse: collapse;
+}
+table input{
+    height: 60px;
+    border: solid 1px #DFDFDF;
+    text-indent: 20px;
+}
+table > tr{
+    margin-bottom: 30px;
+}
+table  td{
+    font:normal 14px "san_serif_bold";
+}
+tr > td >input:last-of-type{
+    margin-bottom: 30px;
+}
+tr:nth-of-type(2) >td >input{
+    margin-bottom: 0;
+}
+
+td > label{
+    margin-top: 14px;
+}
+td > input{
+    width: 480px;
+}
+table label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.date > label{
+    margin-top: 14px;
+}
+.date > div{
+    display: flex;
+    justify-content: space-between;
+}
+.date > div >input{
+    width: 150px;
+}
+.none{
+    display: none;
+}
+.gender{
+    margin-bottom: 30px;
+}
+.gender> label{
+    margin-top: 14px;
+}
+.gender > div{
+    display: flex;
+    justify-content: space-between;
+}
+.gender > div >label{
+    width: 240px;
+    text-align: center;
+    border: solid 1px #DFDFDF;
+    padding: 18px 0;
+}
+
+.none:nth-of-type(1):checked ~ .gender > div >label:nth-of-type(1){
+    border: none;
+    background-color: #17CBA0;
+    color: #fff;
+}
+.none:nth-of-type(2):checked ~ .gender > div >label:nth-of-type(2){
+    border: none;
+    background-color: #17CBA0;
+    color: #fff;
+}
+.tel >div{
+    display: flex;
+    justify-content: space-between;
+}
+.tel> div >input:nth-of-type(1){
+    width: 300px;
+
+}
+.tel> div >input:nth-of-type(2){
+    width: 160px;
+    text-indent: 0;
+    background-color: #17CBA0;
+    border: none;
+    color: #fff;
+    font:normal 14px "san_serif_bold";
+}
+tr:nth-of-type(4) > td{
+    padding-bottom: 100px;
+}
+input.signup{
+    background-color: #17CBA0;
+    font:normal 20px "san_serif_bold";
+    color: #fff;
+}
+
+
+
+
+
+/*
+==========================================================================
+==========================================================================
+*/
+
+
+@media (min-width:320px) and (max-width:480px){
+    td > input{
+        width: 100%;
+    }
+    .date > div >input{
+        width: 32%;
+    }
+    .gender > div >label{
+        width: 50%;
+    }
+
+    .tel> div >input:nth-of-type(1){
+        width: 62.5%;
+    
+    }
+    .tel> div >input:nth-of-type(2){
+        width: 33.5%;
+    }
+}

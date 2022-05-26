@@ -1,0 +1,151 @@
+@charset "utf-8";
+@font-face {
+    font-family: "serif_bold";
+    src: url(../font/KoPubWorld\ Batang\ Bold.ttf);
+}
+@font-face {
+    font-family: "serif_medium";
+    src: url(../font/KoPubWorld\ Batang\ Medium.ttf);
+}
+@font-face {
+    font-family: "serif_light";
+    src: url(../font/KoPubWorld\ Batang\ Light.ttf);
+}
+@font-face {
+    font-family: "san_serif_light";
+    src: url(../font/KoPubWorld\ Dotum\ Light.ttf);
+}
+@font-face {
+    font-family: "san_serif_medium";
+    src: url(../font/KoPubWorld\ Dotum\ Medium.ttf.ttf);
+    
+}
+@font-face {
+    font-family: "san_serif_bold";
+    src: url(../font/KoPubWorld\ Dotum\ Bold.ttf.ttf.ttf);
+}
+
+
+
+
+
+
+
+body,table,tr,th,td,input,label{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+table{
+    margin: 0 auto;
+}
+
+th.title{
+    font: normal 50px "serif_bold";
+    padding-top: 129px;
+    padding-bottom: 106px;
+}
+td{
+    margin: 20px auto;
+}
+td.radiobox{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding: 3px 0px 25px;
+    border-bottom: solid 2px #EBEBEB;
+}
+input.box{
+    display: block;
+    width: 480px;
+    height: 60px;
+    margin: 20px auto;
+    text-indent: 20px;
+    border: solid 1px #DBDBDB;
+    font: normal 14px "san_serif_medium";
+    color: #9A9A9A;
+}
+input.btn{
+    display: block;
+    width: 480px;
+    height: 60px;
+    margin: 20px auto;
+    text-indent: 20px;
+    border: none;
+    background-color: #17CBA0;
+    font: bold 20px "san_serif_bold";
+    color: #ffffff;
+    text-indent: 0;
+}
+input.login_radio{
+    display: none;
+}
+label.circle{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: solid 1px #707070;
+    transition: 0.2s;
+}
+input.login_radio:checked + .circle{
+    background-color: #17CBA0;
+    border: none;
+}
+
+label{
+    display: block;
+}
+label.login_radio{
+    display: inline-block;
+    padding-left: 8px;
+    vertical-align: middle;
+    font: normal 14px "san_serif_medium";
+    color: #9A9A9A;
+}
+label.sign{
+    padding-top: 20px;
+    padding-left: 20px;
+    font: normal 14px "san_serif_medium";
+    color: #AFAFAF;
+}
+a.search{
+    padding-left: 3px;
+    font: normal 14px "san_serif_medium";
+    color: #AFAFAF;
+}
+a.sign{
+    padding-left: 3px;
+    font: normal 14px "san_serif_medium";
+    color: #17CBA0;
+    text-decoration: underline;
+}
+
+/*
+===============================================================================
+===============================================================================
+
+*/
+
+@media (min-width:320px) and (max-width:484px){
+    input.box{
+        width: 100%;
+    }
+    input.btn{
+        width: 100%;
+    }
+    
+
+
+
+
+}

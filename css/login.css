@@ -49,10 +49,12 @@ table{
     margin: 0 auto;
 }
 
-th.title{
+h1.title{
+    text-align: center;
     font: normal 50px "serif_bold";
     padding-top: 129px;
     padding-bottom: 106px;
+    margin: 0;
 }
 td{
     margin: 20px auto;

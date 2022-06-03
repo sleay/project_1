@@ -1,28 +1,28 @@
 @charset "utf-8";
 @font-face {
     font-family: "serif_bold";
-    src: url(../font/KoPubWorld\ Batang\ Bold.ttf);
+    src: url(../font/KoPubWorld\ Batang\ Bold.woff2);
 }
 @font-face {
     font-family: "serif_medium";
-    src: url(../font/KoPubWorld\ Batang\ Medium.ttf);
+    src: url(../font/KoPubWorld\ Batang\ Medium.woff2);
 }
 @font-face {
     font-family: "serif_light";
-    src: url(../font/KoPubWorld\ Batang\ Light.ttf);
+    src: url(../font/KoPubWorld\ Batang\ Light.woff2);
 }
 @font-face {
     font-family: "san_serif_light";
-    src: url(../font/KoPubWorld\ Dotum\ Light.ttf);
+    src: url(../font/KoPubWorld\ Dotum\ Light.woff2);
 }
 @font-face {
     font-family: "san_serif_medium";
-    src: url(../font/KoPubWorld\ Dotum\ Medium.ttf);
+    src: url(../font/KoPubWorld\ Dotum\ Medium.woff2);
     
 }
 @font-face {
     font-family: "san_serif_bold";
-    src: url(../font/KoPubWorld\ Dotum\ Bold.ttf);
+    src: url(../font/KoPubWorld\ Dotum\ Bold.woff2);
 }
 
 
@@ -414,7 +414,7 @@ div.bottom_footer > p > span{
         margin-top: 48px;
         /* font-size: 15px; */
         color: #000;
-        transform: scale(1.07);
+        transform: scale(107%);
         transform-origin: left;
     }
     
@@ -428,7 +428,7 @@ div.bottom_footer > p > span{
         margin-top: 48px;
         /* font-size: 15px; */
         color: #000;
-        transform: scale(1.07);
+        transform: scale(107%);
         transform-origin: left;
     }
     .mobile{

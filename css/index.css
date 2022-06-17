@@ -2,19 +2,19 @@
 
 
 
-div.slide_img{
+.swiper{
     position: relative;
     margin-bottom: 70px;
     margin-top: 120px;
 }
-div.slide_btn_1{
+div.swiper-button-prev{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 45px;
     height: 60px;
     background-color: rgba(0, 0, 0,0.4);
-    /* border-radius: 35px; */
+    color: #fff;
     border: none;
     position: absolute;
     z-index: 999;
@@ -23,24 +23,16 @@ div.slide_btn_1{
     left: 70px;
     text-align: center; 
 }
-div.slide_btn_1 > span{
-    color: #fff;
-    font-size: 40px;
-}
-div.slide_btn_2 > span{
-    color: #fff;
-    font-size: 40px;
 
-}
 
-div.slide_btn_2{
+div.swiper-button-next{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 45px;
     height: 60px;
     background-color: rgba(0, 0, 0,0.4);
-    /* border-radius: 35px; */
+    color: #fff;
     border: none;
     position: absolute;
     z-index: 999;
@@ -49,10 +41,50 @@ div.slide_btn_2{
     right: 70px;
 }
 
-.slide_img >  div > p > img{
-    width: 100%;
-    height: 100%;
+
+.swiper {
+        width: 100%;
+        height: 100%;
 }
+
+.swiper-slide {
+        text-align: center;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination {
+    bottom: 10% !important;
+    }
+
+    .swiper-pagination-bullet{
+    border-radius: 0 !important;
+    width: 30px !important;
+    }
+    .swiper-pagination-bullet-active{
+    background-color: #17CBA0 !important;
+    }
+
+
+
+
 div.reservation{
     width: 1280px;
     height: 88px;
@@ -301,22 +333,24 @@ div.nav_img{
 
 @media (min-width:320px) and (max-width:767px){
 
-    div.slide_img{
+    .swiper{
         overflow: hidden;
         position: relative;
         margin-bottom: 0px;
         margin-top: 61px;
     }
-    div.slide_btn_1{
+    div.swiper-button-prev{
         display: none;
     }
-    div.slide_btn_2{
+    div.swiper-button-next{
         display: none;
     }
-    .slide_img >  div > p > img{
+    .swiper-slide img {
+        display: block;
         width: 150%;
         height: 100%;
-        transform: translateX(-10%);
+        object-fit: cover;
+        transform: translateX(15%);
     }
 
 
@@ -560,24 +594,30 @@ div.nav_img{
 }
 
 @media (min-width:768px) and (max-width:1024px){
-    div.slide_img{
+    .swiper{
         overflow: hidden;
         position: relative;
         margin-bottom: 0px;
         margin-top: 61px;
     }
-    div.slide_btn_1{
+    div.swiper-button-prev{
         display: none;
     }
-    div.slide_btn_2{
+    div.swiper-button-next{
         display: none;
     }
-    .slide_img >  div > p > img{
+    /* .slide_img >  div > p > img{
         width: 150%;
         height: 100%;
         transform: translateX(-10%);
+    } */
+    .swiper-slide img {
+        display: block;
+        width: 150%;
+        height: 100%;
+        object-fit: cover;
+        transform: translateX(15%);
     }
-
 
 
 

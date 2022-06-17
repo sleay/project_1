@@ -46,25 +46,27 @@ section > h2{
     width: 180px;
 }
 .select{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    
+   
 }
-.select > div > p:nth-of-type(2):hover{
+.select > div > p:nth-of-type(1):hover{
     background-color: #FF0000;
 
 }
-.content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(2):hover{
+.content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(1):hover{
     background-color: #17CBA0;
 
 }
 .select >div{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+  
 }
 .select >div >p:nth-of-type(1){
-    font-size: 0;
-}
-.select >div >p:nth-of-type(2){
     width: 100%;
+    top: 0;
     background-color: #000;
     font:normal 14px "san_serif_bold";
     color: #fff;
@@ -73,9 +75,27 @@ section > h2{
     text-transform: uppercase;
     transition: 0.3s;
 }
-.select >div:nth-of-type(1) >p:nth-of-type(2){
-    position: absolute;
-    top: 0;
+
+.select >div >p:nth-of-type(2){
+    font-size: 0;
+}
+.select >div >p:nth-of-type(2) > img{
+    display: block;
+    width: 100%;
+    height: 0;
+}
+.select >div:nth-of-type(1) >p:nth-of-type(2) > img{
+    height: 100%;
+    
+}
+@keyframes ani{
+    0%{height: 0;}
+    100%{height: 100%;}
+}
+
+@keyframes ani2{
+    0%{height: 100%;}
+    100%{height: 0;}
 }
 
 
@@ -206,7 +226,7 @@ caption{
     content: '';
     display: block;
     border-bottom: solid 5px #17CBA0;
-    transition: 0.3s;
+    transition: 1s;
     margin-top: 11px;
 
 }
@@ -265,7 +285,7 @@ caption{
     display: flex;
     justify-content: space-between;
     flex-shrink: 0;
-    transition: 0.3s;
+    transition: 1s;
 }
 .pr > div > ul:nth-of-type(4) >li >div{
     display: flex;

@@ -27,11 +27,12 @@ h2{
     position: relative;
     margin: 0 auto;
     width: 1240px;
+    overflow: hidden;
 }
 .imgbox >ul{
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    transition: 1s;
 }
 .imgbox  >ul > li{
     width: 400px;
@@ -40,9 +41,9 @@ h2{
     margin-right: 20px;
     transition: 1s;
 }
-.imgbox:hover >ul >li{
-    transform: translateX(-840px);
-}
+/* .imgbox:hover >ul >li{
+    transform: translateX(calc(-100% - 20px));
+} */
 .btn{
     position: absolute;
     width: 40px;
@@ -62,9 +63,7 @@ h2{
 .left{
     left: 0;
 }
-.left > span{
-    text-indent: 10px;
-}
+
 .right{
     right: 0;
 }

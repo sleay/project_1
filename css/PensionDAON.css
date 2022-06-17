@@ -451,9 +451,6 @@ h4 > span{
     .left{
         left: 0;
     }
-    .left > span{
-        text-indent: 10px;
-    }
     .right{
         right: 0;
     }

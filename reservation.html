@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="images/favicomatic/favicon-16x16.png" sizes="16x16" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/common.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -87,39 +88,53 @@
                         </div>
 
                         <div>
-                            <div class="btn">
+                            <div class="group">
                                 <p>성인</p>
-                                <input type="number" value="2">
+                                <div class="btn ad">
+                                    <a href="#">-</a>
+                                    <p>2</p>
+                                    <a href="#">+</a>
+                                </div>
                             </div>
-                            <div  class="btn">
+                            <div  class="group">
                                 <p>아동</p>
-                                <input type="number" value="2">
+                                <div class="btn kd">
+                                    <a href="#">-</a>
+                                    <p>0</p>
+                                    <a href="#">+</a>
+                                </div>
                             </div>
-                            <div  class="btn">
+                            <div  class="group">
                                 <p>유아</p>
-                                <input type="number" value="0">
+                                <div class="btn ba">
+                                    <a href="#">-</a>
+                                    <p>0</p>
+                                    <a href="#">+</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="pay">
                             <p>결제 금액</p>
                             <div>
-                                <p>200.000</p>
+                                <p class="pcode1">0</p>
                                 <p>
                                     <span>회원할인</span>
-                                    <span>-20.000</span>
+                                    <span class="discount">-20.000</span>
                                 </p>
                             </div>
 
                             <div>
                                 <p>
                                     <span>총결제 금액</span>
-                                    <span>180.000</span>
+                                    <span class="pcode2">80.000</span>
                                 </p>
                             </div>
                         </div>
                         <input type="submit" value="결제하기" class="buy">
                     </div>
+
+                    <script src="js/reservation.js"></script>
 
                     <div class="text">
                         <div>

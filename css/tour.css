@@ -3,7 +3,7 @@
 .slide_img{
     position: relative;
     width: 100%;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 .slide_img > h2{
     position: absolute;
@@ -72,6 +72,7 @@ img.icon{
 
     
 }
+
 
 .content-2{
     width: 1280px;

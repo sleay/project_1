@@ -1,7 +1,7 @@
 @import url('./common.css');
 
 .room_banner{
-    margin: 120px auto 75px;
+    margin: 120px auto 0px;
     width: 1280px;
     background-image: url(../images/banner/room_banner.jpg);
     
@@ -17,26 +17,74 @@
     color: #fff;
 }
 
+.secbtn{
+    display: flex;
+    margin: 0 auto;
+    width: 1280px;
+    background-color: #fff;
+}
+.secbtn > a{
+    display: block;
+    width: 100%;
+}
+.secbtn > a:nth-of-type(2){
+    border-left: solid 2px #eee;
+}
+.secbtn p{
+    width: 100%;
+    margin: 0;
+    padding: 20px 100px;
+    text-align: center;
+    white-space: normal;
+    font:normal 30px "san_serif_bold";
+    color: #000;
+}
+/* .secbtn a:nth-of-type(1){
+    background-color: #f00;
+} */
+.secbtn p >span{
+    font:normal 30px "san_serif_bold";
+}
+.secbtn p >span.red{
+    color: #FF0000;
+}
+.secbtn p >span.green{
+    color: #17CBA0;
+}
 section > h2{
     font:normal 30px "san_serif_bold";
     margin-bottom: 15px;
 }
+
+
+
+
+
 .content-1{
     width: 1280px;
     margin: 0 auto;
-    margin-bottom: 170px;
+    margin-bottom: 160px;
     
 }
-
-.content-1 >h2 > span{
-    font:normal 30px "san_serif_bold";
-    color: #FF0000;
+.content-2{
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+    display: none;
 }
+
+
 .contentbox1{
     width: 100%;
     height: 820px;
     background-color: #FBFBFB;
     padding: 20px;
+    animation: ani 0.5s forwards;
+}
+
+@keyframes ani{
+    0%{opacity: 0; background-color: #FBFBFB;}
+    100%{opacity: 1;}
 }
 .contentbox1 > ul{
     display: flex;
@@ -45,12 +93,7 @@ section > h2{
 .contentbox1 > ul > li:nth-of-type(1){
     width: 180px;
 }
-.select{
-    /* display: flex;
-    flex-direction: column; */
-    
-   
-}
+
 .select > div > p:nth-of-type(1):hover{
     background-color: #FF0000;
 
@@ -75,6 +118,12 @@ section > h2{
     text-transform: uppercase;
     transition: 0.3s;
 }
+.select >div >p:nth-of-type(1).red{
+    background-color: #f00;
+}
+.select >div >p:nth-of-type(1).green{
+    background-color: #17CBA0;
+}
 
 .select >div >p:nth-of-type(2){
     font-size: 0;
@@ -87,15 +136,6 @@ section > h2{
 .select >div:nth-of-type(1) >p:nth-of-type(2) > img{
     height: 100%;
     
-}
-@keyframes ani{
-    0%{height: 0;}
-    100%{height: 100%;}
-}
-
-@keyframes ani2{
-    0%{height: 100%;}
-    100%{height: 0;}
 }
 
 
@@ -166,22 +206,6 @@ caption{
 
 
 
-
-.content-2{
-    width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 160px;
-}
-
-.content-2 >h2 > span{
-    font:normal 30px "san_serif_bold";
-    color: #17CBA0;
-}
-.contentbox2{
-    width: 100%;
-    height: 820px;
-    background-color: #FBFBFB;
-}
 
 
 
@@ -367,10 +391,37 @@ caption{
     }
 
 
-    section > h2{
+    .secbtn{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        border-top: solid 1px #eee;
+    }
+    .secbtn > a{
+        display: block;
+        width: 100%;
+    }
+    .secbtn p{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        white-space: normal;
         font:normal 20px "san_serif_bold";
-        margin-bottom: 0px;
-        margin-left: 20px;
+        color: #000;
+    }
+    /* .secbtn a:nth-of-type(1){
+        background-color: #f00;
+    } */
+    .secbtn p >span{
+        font:normal 20px "san_serif_bold" !important;
+    }
+    .secbtn p >span.red{
+        color: #FF0000;
+    }
+    .secbtn p >span.green{
+        color: #17CBA0;
     }
     .content-1{
         width: 100%;
@@ -380,10 +431,6 @@ caption{
         
     }
     
-    .content-1 >h2 > span{
-        font:normal 20px "san_serif_bold";
-        color: #FF0000;
-    }
     .contentbox1{
         width: 100%;
         height: 100%;
@@ -421,11 +468,11 @@ caption{
     .select > div > p > img{
         width: 100%;
     }
-    .select > div > p:nth-of-type(2):hover{
+    .select > div > p:nth-of-type(1):hover{
         background-color: #FF0000;
     
     }
-    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(2):hover{
+    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(1):hover{
         background-color: #17CBA0;
     
     }
@@ -433,22 +480,18 @@ caption{
         position: relative;
         width: 20%;
     }
-    .select >div >p:nth-of-type(1){
-        font-size: 0;
-    }
     .select >div >p:nth-of-type(2){
+        display: none;
+    }
+    .select >div >p:nth-of-type(1){
         width: 100%;
         background-color: #000;
         font:normal 12px/14px "san_serif_bold";
         color: #fff;
         text-align: center;
-        padding: 10px;
+        padding: 20px;
         text-transform: uppercase;
         transition: 0.3s;
-    }
-    .select >div:nth-of-type(1) >p:nth-of-type(2){
-        position: absolute;
-        top: 0;
     }
     
     
@@ -588,7 +631,7 @@ caption{
         content: '';
         display: block;
         border-bottom: solid 5px #17CBA0;
-        transition: 0.3s;
+        transition: 1s;
         margin-top: 11px;
     
     }
@@ -649,7 +692,7 @@ caption{
         flex-wrap: wrap;
         justify-content: space-between;
         flex-shrink: 0;
-        transition: 0.3s;
+        transition: 1s;
     }
     .pr > div >ul > li:nth-of-type(1),.pr > div >ul > li:nth-of-type(2){
         width: 48%;
@@ -734,18 +777,46 @@ caption{
         display: flex;
         justify-content: center;
         align-items: center;
-        font: normal 20px "san_serif_bold";
+        font: normal 24px "san_serif_bold";
         background-color: transparent;
         padding: 20px 0;
         color: #000;
     }
 
-
-    section > h2{
-        font:normal 20px "san_serif_bold";
-        margin-bottom: 0px;
-        margin-left: 20px;
+    .secbtn{
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        background-color: #fff;
+        border-top: solid 1px #eee;
     }
+    .secbtn > a{
+        display: block;
+        width: 100%;
+    }
+    .secbtn p{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        white-space: normal;
+        font:normal 20px "san_serif_bold";
+        color: #000;
+    }
+    /* .secbtn a:nth-of-type(1){
+        background-color: #f00;
+    } */
+    .secbtn p >span{
+        font:normal 20px "san_serif_bold" !important;
+    }
+    .secbtn p >span.red{
+        color: #FF0000;
+    }
+    .secbtn p >span.green{
+        color: #17CBA0;
+    }
+
+
     .content-1{
         width: 100%;
         height: 100%;
@@ -795,11 +866,11 @@ caption{
     .select > div > p > img{
         width: 100%;
     }
-    .select > div > p:nth-of-type(2):hover{
+    .select > div > p:nth-of-type(1):hover{
         background-color: #FF0000;
     
     }
-    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(2):hover{
+    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(1):hover{
         background-color: #17CBA0;
     
     }
@@ -807,10 +878,10 @@ caption{
         position: relative;
         width: 20%;
     }
-    .select >div >p:nth-of-type(1){
-        font-size: 0;
-    }
     .select >div >p:nth-of-type(2){
+        display: none;
+    }
+    .select >div >p:nth-of-type(1){
         width: 100%;
         background-color: #000;
         font:normal 12px/14px "san_serif_bold";
@@ -820,10 +891,7 @@ caption{
         text-transform: uppercase;
         transition: 0.3s;
     }
-    .select >div:nth-of-type(1) >p:nth-of-type(2){
-        position: absolute;
-        top: 0;
-    }
+
     
     
     
@@ -950,7 +1018,7 @@ caption{
         text-align: center;
         font: normal 16px "san_serif_medium";
         color: #717171;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .content-3 > div > label:hover{
         font: normal 16px "san_serif_bold";
@@ -962,7 +1030,7 @@ caption{
         content: '';
         display: block;
         border-bottom: solid 5px #17CBA0;
-        transition: 0.3s;
+        transition: 1s;
         margin-top: 11px;
     
     }
@@ -1021,7 +1089,7 @@ caption{
         display: flex;
         justify-content: space-between;
         flex-shrink: 0;
-        transition: 0.3s;
+        transition: 1s;
     }
     .pr > div > ul:nth-of-type(4) >li >div{
         display: flex;
@@ -1095,7 +1163,7 @@ caption{
 
 @media (min-width:1024px) and (max-width:1280px){
     .room_banner{
-        margin: 120px auto 75px;
+        margin: 120px auto 0px;
         width: 1024px;
         background-image: url(../images/banner/room_banner.jpg);
         background-size: cover;
@@ -1113,22 +1181,53 @@ caption{
         color: #fff;
     }
     
+    .secbtn{
+        display: flex;
+        margin: 0 auto;
+        width: 1024px;
+        background-color: #fff;
+    }
+    .secbtn > a{
+        display: block;
+        width: 100%;
+    }
+    .secbtn p{
+        width: 100%;
+        margin: 0;
+        padding: 20px 100px;
+        text-align: center;
+        white-space: normal;
+        font:normal 24px "san_serif_bold";
+        color: #000;
+    }
+    /* .secbtn a:nth-of-type(1){
+        background-color: #f00;
+    } */
+    .secbtn p >span{
+        font:normal 24px "san_serif_bold" !important;
+    }
+    .secbtn p >span.red{
+        color: #FF0000;
+    }
+    .secbtn p >span.green{
+        color: #17CBA0;
+    }
     section > h2{
-        font:normal 30px "san_serif_bold";
+        font:normal 24px "san_serif_bold";
         margin-bottom: 15px;
     }
     .content-1{
         width: 1024px;
         margin: 0 auto;
-        margin-bottom: 170px;
+        margin-bottom: 160px;
         
     }
-    
-    
-    .content-1 >h2 > span{
-        font:normal 30px "san_serif_bold";
-        color: #FF0000;
+    .content-2{
+        width: 1024px;
+        margin: 0 auto;
+        margin-bottom: 160px;
     }
+    
     .contentbox1{
         width: 100%;
         height: 100%;
@@ -1152,17 +1251,7 @@ caption{
         display: flex;
         flex-direction: column;
     }
-    .select > div > p:nth-of-type(2):hover{
-        background-color: #FF0000;
-    
-    }
-    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(2):hover{
-        background-color: #17CBA0;
-    
-    }
-    .select >div{
-        position: relative;
-    }
+    /*
     .select >div >p:nth-of-type(1){
         font-size: 0;
     }
@@ -1179,10 +1268,49 @@ caption{
     .select >div:nth-of-type(1) >p:nth-of-type(2){
         position: absolute;
         top: 0;
+    } */
+
+    .select > div > p:nth-of-type(1):hover{
+        background-color: #FF0000;
+    
+    }
+    .content-2 > .contentbox1 >ul >li.select > div > p:nth-of-type(1):hover{
+        background-color: #17CBA0;
+    
+    }
+    .select >div{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .select >div >p:nth-of-type(1){
+        width: 100%;
+        top: 0;
+        background-color: #000;
+        font:normal 12px "san_serif_bold";
+        color: #fff;
+        text-align: center;
+        padding: 14.90px;
+        text-transform: uppercase;
+        transition: 0.3s;
     }
     
     
-    
+    .select >div >p:nth-of-type(2){
+        font-size: 0;
+        height: 100%;
+    }
+    .select >div >p:nth-of-type(2) > img{
+        display: block;
+        width: 100%;
+        height: 0;
+    }
+    .select >div:nth-of-type(1) >p:nth-of-type(2) > img{
+        height: 100%;
+        
+    }
+
+
     .contentbox1 > ul > li:nth-of-type(2){
         display: flex;
         justify-content: space-between;
@@ -1246,33 +1374,7 @@ caption{
         font:normal 14px/30px "san_serif_medium";
     }
     
-    
-    
-    
-    
-    
-    
-    .content-2{
-        width: 1024px;
-        margin: 0 auto;
-        margin-bottom: 160px;
-    }
-    
-    .content-2 >h2 > span{
-        font:normal 30px "san_serif_bold";
-        color: #17CBA0;
-    }
-    .contentbox2{
-        width: 100%;
-        height: 820px;
-        background-color: #FBFBFB;
-    }
-    
-    
-    
-    
-    
-    
+
     .content-3{
         width: 1024px;
         margin: 0 auto;
@@ -1311,7 +1413,7 @@ caption{
         content: '';
         display: block;
         border-bottom: solid 5px #17CBA0;
-        transition: 0.3s;
+        transition: 1s;
         margin-top: 11px;
     
     }
@@ -1370,7 +1472,7 @@ caption{
         display: flex;
         justify-content: space-between;
         flex-shrink: 0;
-        transition: 0.3s;
+        transition: 1s;
     }
     .pr > div > ul:nth-of-type(4) >li >div{
         display: flex;

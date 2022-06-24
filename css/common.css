@@ -104,6 +104,10 @@ header{
     z-index: 99999;
     top: 0;
     padding-bottom: 36px;
+    transition: 0.3s;
+}
+header.active{
+    transform: translateY(-100%);
 }
 div.gnbbox{
     display: flex;
@@ -173,7 +177,7 @@ h1 > a{
     vertical-align: middle;
     
 }
-.menu >label{
+.menu >span{
     width: 100%;
     border-bottom: solid 3px #fff;
 }

@@ -40,19 +40,48 @@
             <div class="swiper-pagination"></div>
         </div>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="js/index.js"></script>
+        
 
             
         <div class="reservation">
             <div class="rvbox">
                 <div class="date">
+                    <div class="datepop">
+                        <p>날짜</p>
+                        <div>
+                            달력
+                        </div>
+                    </div>
+
                     <p class="indent">날짜</p>
                     <p><span class="material-symbols-outlined">
                         calendar_month
                         </span><input type="date">
                     </p>
                 </div>
+
+
                 <div class="room">
+                    <div class="roompop">
+                        <ul>
+                            <!-- <li class="list">
+                                <p>101호</p>
+                                <div>
+                                    <div>
+                                        <img src="./images/room_fix/loveyou_101/small_pr_1.jpg">
+                                        <img src="./images/room_fix/loveyou_101/small_pr_2.jpg">
+                                        <p>가격
+                                        2인기준
+                                        100,000원~
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <button>선택하기</button>
+                                    </div>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
                     <p class="indent">객실</p>
                     <p>
                         <span class="material-symbols-outlined">
@@ -73,7 +102,38 @@
                             </datalist>
                     </p>
                 </div>
+
+
                 <div class="person">
+                    <div class="personpop">
+                        <div>
+                            <p>성인</p>
+                            <div>
+                                <a href="#">-</a>
+                                <p>0</p>
+                                <a href="#">+</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>아동</p>
+                            <div>
+                                <a href="#">-</a>
+                                <p>0</p>
+                                <a href="#">+</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>유아</p>
+                            <div>
+                                <a href="#">-</a>
+                                <p>0</p>
+                                <a href="#">+</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                     <p>성인
                     <span>2</span></p>
                     <p>아동
@@ -101,12 +161,19 @@
 
         <div class="submitpopup">
             <div>
-                <div>선택된 날짜</div>
-                <div>선택된 객실</div>
-                <div>인원수</div>
-                
+                <div class="data">
+                    <div>선택된 날짜</div>
+                    <div>선택된 객실</div>
+                    <div>인원수</div>
+                </div>
+                <div class="pay">
+                    <p>금액</p>
+                    <button>결제하기</button>
+                </div>
 
             </div>
+
+            <script src="js/index.js"></script>
 
         </div>
 

@@ -110,8 +110,42 @@ div.reservation > div >  div >p{
     text-indent: 58px;
 }
 .date{
+    position: relative;
     width: 310px;
 }
+.date:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.datepop{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 313px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 99;
+    display: none;
+
+}
+.datepop.active{
+    display: block;
+}
+
+.datepop > p{
+    font: normal 16px "san_serif_bold";
+    margin-bottom: 24px;
+}
+.datepop > div{
+    width: 100%;
+    height: 80%;
+    background-color: #ddd;
+
+}
+
 .date > p >span{
     padding: 0 15px;
     font-size: 26px;
@@ -119,9 +153,100 @@ div.reservation > div >  div >p{
     vertical-align: middle;
     font-weight: 500;
 }
+
 .room{
     width: 330px;
+    position: relative;
 }
+.room:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.roompop{
+    width: 680px;
+    height: 313px;
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: translateY(-100%);
+    padding: 0 20px;
+    background-color: #fff;
+    z-index: 99;
+    overflow: auto;
+    display: none;
+    
+}
+.roompop::-webkit-scrollbar{
+    display: block;
+    background-color: #EEE;
+    
+}
+.roompop::-webkit-scrollbar-thumb{
+    background-color: #17CBA0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 20%);
+}
+.roompop.active{
+    display: block;
+}
+.roompop ul{
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    height: 150px;
+    border-bottom: solid 2px #ddd;
+}
+.list:last-of-type{
+    border-bottom: none;
+}
+.list > p{
+    font: normal 16px "san_serif_bold";
+    margin: 10px 0;
+}
+.list > div{
+    display: flex;
+}
+
+.list > div > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.list > div > div:nth-of-type(1) > img{
+    display: block;
+    width: 32%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.list > div > div:nth-of-type(1) > p{
+    font: normal 16px "san_serif_bold";
+    width: 32%;
+    white-space: pre-line;
+}
+
+.list > div > div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.list > div > div:nth-of-type(2) >button{
+    width: 140px;
+    height: 50px;
+    background-color: #FF6767;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font: normal 20px "san_serif_bold";
+
+}
+
+
+
+
 .room > p >span{
     padding: 0 15px;
     font-size: 26px;
@@ -133,10 +258,30 @@ div.reservation > div >  div >p{
     font-size: 16px;
 }
 .person{
+    position: relative;
     width: 350px;
     display: flex;
     justify-content: space-around;
 }
+.person:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.personpop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 313px;
+    background-color: #fff;
+    transform: translateY(-100%);
+    z-index: 99;
+    padding: 20px;
+    display: none;
+}
+
+
 .person > p{
     width: 100%;
     text-indent: 0;
@@ -158,6 +303,56 @@ div.submitbox{
     margin-top: 8px;
     
 }
+
+.submitpopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 60%);
+   
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    display: none;
+}
+.submitpopup.active{
+ display: flex;
+}
+.submitpopup >div{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+    padding: 2%;
+}
+
+.data{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.tag{
     width: 1280px;
     height: 70px;

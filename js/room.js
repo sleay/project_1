@@ -45,6 +45,10 @@ $.ajax({
     let num1 = 0,num2 = 0;
     let imgsize = elPtag[0].offsetHeight;
 
+    
+    let ran;
+
+
 
     Sel1();
     Sel2();
@@ -56,13 +60,19 @@ $.ajax({
         
                 sel.addEventListener('click',function(){
                 
-                    elImg1[num1].style = "height:0; transition:0.5s;" ;
-                    elImg1[key].style = `height:${imgsize}px; transition:0.5s;` ;
+                    elImg1[num1].style = "height:0; transition:0.3s;" ;
+                    elImg1[key].style = `height:${imgsize}px; transition:0.3s;` ;
         
                     elPtag1[num1].classList.remove('red');
                     elPtag1[key].classList.add('red');
         
                     num1=key;
+
+
+
+
+
+
                   
                     const List = $('.content-1 .contentbox1 ul li:nth-of-type(2)');
                     List.html(
@@ -76,9 +86,33 @@ $.ajax({
                         `
                         );
 
+                        
+                        let arr1 = data.Love[key].Pr;
+                        for(let i in arr1){
+    
+                            console.log(   arr1[i]   );
+
+                            $('.preview > div:nth-of-type(2) >img').on('click',function(){
+        
+
+
+        
+                                $('.preview > div:nth-of-type(1) >img').attr('src',arr1[i])
+                        
+                            });
+
+
+
+
+
+
+                        }
+
+                       
+
+
                     
                     console.log(data.Love[key])
-                    console.log(List)
                 });
         
         });
@@ -91,8 +125,8 @@ $.ajax({
         
                 sel.addEventListener('click',function(){
                 
-                    elImg2[num2].style = "height:0; transition:0.5s;" ;
-                    elImg2[key].style = `height:${imgsize}px; transition:0.5s;` ;
+                    elImg2[num2].style = "height:0; transition:0.3s;" ;
+                    elImg2[key].style = `height:${imgsize}px; transition:0.3s;` ;
         
                     elPtag2[num2].classList.remove('green');
                     elPtag2[key].classList.add('green');
@@ -112,16 +146,20 @@ $.ajax({
                         );
                     
                         console.log(data.Only[key])
-                    console.log(List1)
                 });
         
         });
     }
 
 
-    $('.preview > div:nth-of-type(2) >img').on('click',function(){
-        console.log(this)
-    });
+    // $('.preview > div:nth-of-type(2) >img').on('click',function(){
+        
+
+
+        
+    //     $('.preview > div:nth-of-type(1) >img').attr('src',data.Love[0].Pr.b1)
+
+    // });
 
 
 

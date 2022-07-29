@@ -102,7 +102,7 @@ div.reservation{
 }
 
 div.reservation > div >  div >p{
-    font-size: 20px;
+    font-size: 16px;
     font-family: "san_serif_medium";
     margin: 6.5px auto;
 }
@@ -129,10 +129,15 @@ div.reservation > div >  div >p{
     background-color: #fff;
     z-index: 99;
     display: none;
-
 }
 .datepop.active{
     display: block;
+    animation: ani1 0.5s forwards;
+}
+
+@keyframes ani1{
+    0%{height: 88px; opacity: 0;}
+    100%{height: 313px; opacity: 1;} 
 }
 
 .datepop > p{
@@ -176,19 +181,25 @@ div.reservation > div >  div >p{
     overflow: auto;
     display: none;
     
+    
 }
 .roompop::-webkit-scrollbar{
     display: block;
     background-color: #EEE;
+    box-sizing: border-box;
+    width: 10px;
+
     
 }
 .roompop::-webkit-scrollbar-thumb{
+    width: 100%;
     background-color: #17CBA0;
     border-radius: 5px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 20%);
 }
 .roompop.active{
     display: block;
+    animation: ani1 0.5s forwards;
 }
 .roompop ul{
     display: flex;
@@ -272,6 +283,10 @@ div.reservation > div >  div >p{
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 350px;
     height: 313px;
     background-color: #fff;
@@ -279,6 +294,47 @@ div.reservation > div >  div >p{
     z-index: 99;
     padding: 20px;
     display: none;
+    
+}
+.personpop.active{
+    display: flex;
+    animation: ani1 0.5s forwards;
+}
+.personpop > div{
+width: 60%;
+text-align: center;
+}
+.personpop > div > p{
+    font: normal 16px "san_serif_bold";
+    margin-bottom: 10px;
+}
+.personpop > div > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personpop > div > div > p{
+    font: normal 12px "san_serif_bold";
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #eee;
+}
+.personpop > div > div > button{
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    border: solid 1px #eee;
+    background-color: #eee;
+    font: normal 12px "san_serif_bold";
+}
+.personpop > div > div > button:nth-of-type(1){
+    border-radius: 10px 0 0 10px;
+    
+}
+.personpop > div > div > button:nth-of-type(2){
+    border-radius: 0px 10px 10px 0px;
 }
 
 

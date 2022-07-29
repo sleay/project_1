@@ -1,4 +1,4 @@
-@import url('./common.css');
+@import url(./common.css);
 
 .rv_banner{
     margin: 120px auto 50px;
@@ -29,140 +29,23 @@
 
 .datebox{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 100%;
 }
 
 .date{
-    width: 970px;
-    height: 1400px;
-    border: solid 1px #D2D2D2;
+    width: 100%;
+    height: 2170px;
+    /* border: solid 1px #D2D2D2; */
     background-color: #ddd;
     margin-bottom: 100px;
 }
-.sticky{
-    /* display: flex;
-    flex-direction: column; */
-    position: sticky;
-    top: 120px;
-    right: 0;
-    width: 290px;
-    height: 560px;
-    border: solid 1px #D2D2D2;
-    padding: 16px;
-}
-.sticky > div{
+.date > iframe{
     width: 100%;
-    margin-bottom: 30px;
-}
-.sticky > div > p{
-    font: normal 14px "san_serif_bold";
-    margin-bottom: 16px;
-}
-
-.sticky input{
-    width: 100%;
-    height: 47px;
-    border-radius: 15px;
+    height: 100%;
     border: none;
-    background-color: #F9F9F9;
-    text-align: center;
-    font-family: "san_serif_medium"   ;
-    text-transform: uppercase;
-}
-.sticky > div:nth-of-type(3){
-    display: flex;
-    justify-content: space-between;
-}
-
-input.buy{
-    width: 100%;
-    height: 66px;
-    background-color: #FF5B5B;
-    border-radius: 0;
-    font: normal 30px "san_serif_bold";
-    color: #fff;
 }
 
 
-.group{
-    width: 30%;
-}
-.group > p{
-    font: normal 12px "san_serif_bold";
-    text-align: left;
-    margin-bottom: 7px;
-}
-.group >div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 27px;
-    border-radius: 5px;
-    border: solid 1px #ddd;
-    vertical-align: middle;
-    
-}
-.group >div > a{
-
-    display: block;
-    width: 30%;
-    height: 27px;
-    line-height: 27px;
-    text-align: center;
-    font-weight: bold;
-    background-color: #ddd;
-    font-family: "san_serif_bold";
-}
-.group >div > a:nth-of-type(1){
-    border-radius: 5px 0 0 5px;
-}
-.group >div > a:nth-of-type(2){
-    border-radius: 0 5px 5px 0;
-}
-.group >div >p{
-    padding: 0;
-    margin: 0;
-    font-family: "san_serif_medium";
-    line-height: 27px;
-    text-align: center;
-    font-size: 11px;
-}
-
-
-div.pay{
-    margin-bottom: 0;
-}
-div.pay > div:nth-of-type(1){   
-    width: 100%;
-    padding-bottom: 7px;
-    border-bottom: solid 1px #D2D2D2;
-}
-div.pay > div:nth-of-type(1) >p{
-    text-align: right;
-    font: normal 14px "san_serif_bold";
-}
-div.pay > div:nth-of-type(1) >p:nth-of-type(2){
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-div.pay > div:nth-of-type(2) >p{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font: normal 14px "san_serif_bold";
-    padding: 9px 0 19px;
-}
-
-
-div.pay > div:nth-of-type(1) >p >span{
-    font: normal 14px "san_serif_bold";
-    color: #FF0000;
-}
 .text{
     width: 100%;
 
@@ -179,105 +62,6 @@ div.pay > div:nth-of-type(1) >p >span{
     font: normal 14px "san_serif_medium";
     line-height: 40px;
 }
-.m_fixed{
-    width: 100%;
-    position:fixed;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 99;
-    padding: 10px 0;
-    display: none;
-}
-.m_fixed > input{
-    display: block;
-    width: 95%;
-    height: 60px;
-    margin: 0 auto;
-    background-color: #FF5B5B;
-    text-align: center;
-    border: none;
-    font: normal 20px "san_serif_bold";
-    color: #fff;
-}
-
-.m_fixed2{
-    display: none;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 80px;
-    z-index: 9;
-    background-color: #fff;
-    transform: translateY(330px);
-    transition: 0.3s;
-    border-radius: 10px 10px 0 0;
-}
-
-.m_fixed2 input{
-    width: 100%;
-    border: solid 1px #dfdfdf;
-    padding: 10px 0;
-    border-radius: 5px;
-    text-align: center;
-    font: normal 12px "san_serif_medium";
-}
-
-.m_flex{
-    display: flex;
-    justify-content: space-between;
-
-}
-.m_flex >div{
-    width: 33%;
-}
-.m_flex input{
-    width: 100%;
-}
-.m_fixed2 >label{
-    display: block;
-    width: 100%;
-    height: 25px;
-    background-color: #ececec;
-    border: solid 1px #dfdfdf;
-    background-image: url(../images/icon/arrow1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    border-radius: 10px 10px 0 0;
-}
-.m_fixed2 >div{
-    padding: 10px;
-
-}
-.m_fixed2 >div:nth-of-type(4){
-    display: flex;
-    justify-content: space-between;
-    border-top: solid 1px #dfdfdf;
-    border-bottom: solid 1px #dfdfdf;
-    padding: 20px;
-}
-.m_fixed2 >div:nth-of-type(4) >span{
-    font: normal 14px "san_serif_bold";
-}
-.m_fixed2 >div:nth-of-type(4) >span:nth-of-type(2){
-    color: #FF0000;
-}
-.m_fixed2 >div p{
-    margin-bottom: 5px;
-    font: normal 14px "san_serif_bold";
-}
-.m_flex p{
-    text-align: center;
-}
-
-input.none:checked ~ .m_fixed2{
-    transform: translateY(0);
-}
-
-input.none:checked ~.m_fixed2 >label{
-    transform: rotate(180deg);
-    border-radius: 0px 0px 5px 5px;
-}
 
 
 
@@ -290,6 +74,10 @@ input.none:checked ~.m_fixed2 >label{
 
 @media (min-width:320px) and (max-width:767px){
 
+    html{
+        height: 100%;
+    }
+
     .rv_banner{
         margin: 61px auto 20px;
         width: 100%;
@@ -334,20 +122,8 @@ input.none:checked ~.m_fixed2 >label{
         background-color: #ddd;
         margin-bottom: 100px;
     }
-    .sticky{
-        display: none;
-        
-    }
     
-    
-    input.buy{
-        width: 100%;
-        height: 66px;
-        background-color: #FF5B5B;
-        border-radius: 0;
-        font: normal 30px "san_serif_bold";
-        color: #fff;
-    }
+  
     .text{
         width: 100%;
     
@@ -369,18 +145,15 @@ input.none:checked ~.m_fixed2 >label{
         margin-bottom: 80px;
     }
 
-    .m_fixed{
-        display: block;
-    }
-
-    .m_fixed2{
-        display: block;
-    }
+  
 
 }
 
 
 @media (min-width:768px) and (max-width:1024px){
+    html{
+        height: 100%;
+    }
     .rv_banner{
         margin: 61px auto 20px;
         width: 100%;
@@ -421,24 +194,11 @@ input.none:checked ~.m_fixed2 >label{
         margin: 0 auto;
         width: 100%;
         height: 800px;
-        border: solid 1px #D2D2D2;
-        background-color: #ddd;
+        /* border: solid 1px #D2D2D2;
+        background-color: #ddd; */
         margin-bottom: 100px;
     }
-    .sticky{
-        display: none;
-        
-    }
-    
-    
-    input.buy{
-        width: 100%;
-        height: 66px;
-        background-color: #FF5B5B;
-        border-radius: 0;
-        font: normal 30px "san_serif_bold";
-        color: #fff;
-    }
+  
     .text{
         width: 100%;
     
@@ -460,20 +220,7 @@ input.none:checked ~.m_fixed2 >label{
         margin-bottom: 80px;
     }
 
-    .m_fixed{
-        display: block;
-    }
-
-    .m_fixed2{
-        display: block;
-    }
-    .m_fixed2 >div:nth-of-type(4) >span:nth-of-type(1){
-        font: normal 16px "san_serif_bold";
-    }
-    .m_fixed2 >div:nth-of-type(4) >span:nth-of-type(2){
-        color: #FF0000;
-        font: normal 16px "san_serif_bold";
-    }
+   
 }
 
 
@@ -508,136 +255,18 @@ input.none:checked ~.m_fixed2 >label{
     
     .datebox{
         position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         width: 100%;
     }
     
     .date{
-        width: 75%;
-        height: 1400px;
-        border: solid 1px #D2D2D2;
-        background-color: #ddd;
+        width: 100%;
+        height: 2170px;
+        /* border: solid 1px #D2D2D2;
+        background-color: #ddd; */
         margin-bottom: 100px;
     }
-    .sticky{
-        /* display: flex;
-        flex-direction: column; */
-        position: sticky;
-        top: 120px;
-        right: 0;
-        width: 22%;
-        height: 560px;
-        border: solid 1px #D2D2D2;
-        padding: 16px;
-    }
-    .sticky > div{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .sticky > div > p{
-        font: normal 14px "san_serif_bold";
-        margin-bottom: 16px;
-    }
-    
-    .sticky input{
-        width: 100%;
-        height: 47px;
-        border-radius: 15px;
-        border: none;
-        background-color: #F9F9F9;
-        text-align: center;
-        font-family: "san_serif_medium"   ;
-        text-transform: uppercase;
-    }
-    .sticky > div:nth-of-type(3){
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    input.buy{
-        width: 100%;
-        height: 66px;
-        background-color: #FF5B5B;
-        border-radius: 0;
-        font: normal 30px "san_serif_bold";
-        color: #fff;
-    }
-    .group{
-        width: 30%;
-    }
-    .group > p{
-        font: normal 12px "san_serif_bold";
-        text-align: left;
-        margin-bottom: 7px;
-    }
-    .group >div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 27px;
-        border-radius: 5px;
-        border: solid 1px #ddd;
-        vertical-align: middle;
-        
-    }
-    .group >div > a{
-    
-        display: block;
-        width: 30%;
-        height: 27px;
-        line-height: 27px;
-        text-align: center;
-        font-weight: bold;
-        background-color: #ddd;
-        font-family: "san_serif_bold";
-    }
-    .group >div > a:nth-of-type(1){
-        border-radius: 5px 0 0 5px;
-    }
-    .group >div > a:nth-of-type(2){
-        border-radius: 0 5px 5px 0;
-    }
-    .group >div >p{
-        padding: 0;
-        margin: 0;
-        font-family: "san_serif_medium";
-        line-height: 27px;
-        text-align: center;
-        font-size: 11px;
-    }
-    div.pay{
-        margin-bottom: 0;
-    }
-    div.pay > div:nth-of-type(1){   
-        width: 100%;
-        padding-bottom: 7px;
-        border-bottom: solid 1px #D2D2D2;
-    }
-    div.pay > div:nth-of-type(1) >p{
-        text-align: right;
-        font: normal 14px "san_serif_bold";
-    }
-    div.pay > div:nth-of-type(1) >p:nth-of-type(2){
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    div.pay > div:nth-of-type(2) >p{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        font: normal 14px "san_serif_bold";
-        padding: 9px 0 19px;
-    }
     
     
-    div.pay > div:nth-of-type(1) >p >span{
-        font: normal 14px "san_serif_bold";
-        color: #FF0000;
-    }
     .text{
         width: 100%;
     
@@ -654,98 +283,5 @@ input.none:checked ~.m_fixed2 >label{
         font: normal 14px "san_serif_medium";
         line-height: 40px;
     }
-    .m_fixed{
-        width: 100%;
-        position:fixed;
-        bottom: 0;
-        background-color: #fff;
-        z-index: 99;
-        padding: 10px 0;
-        display: none;
-    }
-    .m_fixed > input{
-        display: block;
-        width: 95%;
-        height: 60px;
-        margin: 0 auto;
-        background-color: #FF5B5B;
-        text-align: center;
-        border: none;
-        font: normal 20px "san_serif_bold";
-        color: #fff;
-    }
     
-    .m_fixed2{
-        display: none;
-        width: 100%;
-        position: fixed;
-        left: 0;
-        bottom: 80px;
-        z-index: 9;
-        background-color: #fff;
-        transform: translateY(330px);
-        transition: 0.3s;
-        border-radius: 10px 10px 0 0;
-    }
-    
-    .m_fixed2 input{
-        width: 100%;
-        border: solid 1px #dfdfdf;
-        padding: 10px 0;
-        border-radius: 5px;
-        text-align: center;
-        font: normal 12px "san_serif_medium";
-    }
-    
-    .m_flex{
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    .m_flex >div{
-        width: 33%;
-    }
-    .m_flex input{
-        width: 100%;
-    }
-    .m_fixed2 >label{
-        display: block;
-        width: 100%;
-        height: 25px;
-        background-color: #ececec;
-        border: solid 1px #dfdfdf;
-        background-image: url(../images/icon/arrow1.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        border-radius: 10px 10px 0 0;
-    }
-    .m_fixed2 >div{
-        padding: 10px;
-    
-    }
-    .m_fixed2 >div:nth-of-type(4){
-        display: flex;
-        justify-content: space-between;
-        border-top: solid 1px #dfdfdf;
-        border-bottom: solid 1px #dfdfdf;
-        padding: 20px;
-    }
-    .m_fixed2 >div:nth-of-type(4) >span{
-        font: normal 14px "san_serif_bold";
-    }
-    .m_fixed2 >div:nth-of-type(4) >span:nth-of-type(2){
-        color: #FF0000;
-    }
-    .m_fixed2 >div p{
-        margin-bottom: 5px;
-        font: normal 14px "san_serif_bold";
-    }
-    .m_flex p{
-        text-align: center;
-    }
-    
-    input.none:checked ~ .m_fixed2{
-        transform: translateY(0);
-    }
 }

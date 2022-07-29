@@ -1,6 +1,7 @@
 {
     "Love":[
         {
+            "name":"Loveyou 101호",
             "roomNo":101,
             "Pr":{
                 "b0":"images/room_fix/loveyou_101/pr_1.jpg",
@@ -18,6 +19,7 @@
             }
         },
         {
+            "name":"Loveyou 102호",
             "roomNo":102,
             "Pr":{
                 "b0":"images/room_fix/loveyou_102/pr_1.jpg",
@@ -35,6 +37,7 @@
             }
         },
         {
+            "name":"Loveyou 103호",
             "roomNo":103,
             "Pr":{
                 "b0":"images/room_fix/loveyou_103/pr_1.jpg",
@@ -52,6 +55,7 @@
             }
         },
         {
+            "name":"Loveyou 201호",
             "roomNo":201,
             "Pr":{
                 "b0":"images/room_fix/loveyou_201/pr_1.jpg",
@@ -69,6 +73,7 @@
             }
         },
         {
+            "name":"Loveyou 202호",
             "roomNo":202,
             "Pr":{
                 "b0":"images/room_fix/loveyou_202/pr_1.jpg",
@@ -88,6 +93,7 @@
     ],
     "Only":[
         {
+            "name":"Onlyyou 101호",
             "roomNo":101,
             "Pr":{
                 "b0":"images/room_fix/onlyyou_101/pr_1.jpg",
@@ -105,6 +111,7 @@
             }
         },
         {
+            "name":"Onlyyou 102호",
             "roomNo":102,
             "Pr":{
                 "b0":"images/room_fix/onlyyou_102/pr_1.jpg",
@@ -122,6 +129,7 @@
             }
         },
         {
+            "name":"Onlyyou 103호",
             "roomNo":103,
             "Pr":{
                 "b0":"images/room_fix/onlyyou_103/pr_1.jpg",
@@ -139,6 +147,7 @@
             }
         },
         {
+            "name":"Onlyyou 201호",
             "roomNo":201,
             "Pr":{
                 "b0":"images/room_fix/onlyyou_201/pr_1.jpg",
@@ -156,6 +165,7 @@
             }
         },
         {
+            "name":"Onlyyou 202호",
             "roomNo":202,
             "Pr":{
                 "b0":"images/room_fix/onlyyou_202/pr_1.jpg",

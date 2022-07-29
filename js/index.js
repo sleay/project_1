@@ -73,7 +73,16 @@ var swiper = new Swiper(".mySwiper", {
 
             $('.roompop ul').append(elList2)
 
+          
+
           });
+
+          $('.list').on('click',function(){
+            $(this).text()
+            console.log($(this).html().src)
+          
+          });
+
 
 
       }
@@ -90,23 +99,56 @@ let popup = $('.submitpopup');
 
   $(popup).on('click',function(){
     if(event.target.classList.contains('active')){
-
-      $(popup).removeClass('active')
-      
+      $(popup).removeClass('active')   
   }
   })
 
 
 
 $('.room').on('click',function(){
-  $('.roompop').addClass('active')
+  
+  
+  if($('.roompop').hasClass('active')){
+    $('.roompop').removeClass('active')
+  }
+  else{
+    $('.roompop').addClass('active')
+  }
+  
 })
 
 
 $('.date').on('click',function(){
-  $('.datepop').addClass('active')
+
+  
+  if($('.datepop').hasClass('active')){
+    $('.datepop').removeClass('active')
+  }
+  else{
+    $('.datepop').addClass('active')
+  }
+
+
 });
 
+
+$('.person').on('click',function(){
+ 
+
+  if($('.personpop').hasClass('active')){
+    $('.personpop').removeClass('active')
+  }
+  else{
+    $('.personpop').addClass('active')
+  }
+
+});
+
+$('.roompop ul li').each(function(k,v){
+  $('.list div div button').eq(k).on('click',function(){
+    console.log('ok')
+  });
+})
   // $.each(data.Love,function(k,v){
 
   // });

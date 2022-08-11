@@ -123,7 +123,7 @@ div.reservation > div >  div >p{
     left: 0;
     top: 0;
     transform: translateY(-100%);
-    width: 100%;
+    width: 310px;
     height: 313px;
     padding: 20px;
     background-color: #fff;
@@ -173,7 +173,7 @@ div.reservation > div >  div >p{
     height: 313px;
     position: absolute;
     top: 0;
-    left:0;
+    left:310px;
     transform: translateY(-100%);
     padding: 0 20px;
     background-color: #fff;
@@ -252,6 +252,7 @@ div.reservation > div >  div >p{
     border-radius: 10px;
     color: #fff;
     font: normal 20px "san_serif_bold";
+    cursor: pointer;
 
 }
 
@@ -282,7 +283,7 @@ div.reservation > div >  div >p{
 .personpop{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 640px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

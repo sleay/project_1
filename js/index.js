@@ -49,6 +49,16 @@ var swiper = new Swiper(".mySwiper", {
 
             $('.roompop ul').append(elList1)
 
+            let txt= ''
+            $('.list > div > div > button').eq(k).on('click',function(){
+              txt=$('.list > p').eq(k).text();
+              $('.room > p:nth-of-type(2)').html(` <span class="material-symbols-outlined">
+              bed
+          </span>
+          ${txt}`);
+
+            })
+
           });
           $.each(data.Only,function(k,v){
 
@@ -73,6 +83,15 @@ var swiper = new Swiper(".mySwiper", {
 
             $('.roompop ul').append(elList2)
 
+            let txt= ''
+            $('.list > div > div > button').eq(k).on('click',function(){
+              txt=$('.list > p').eq(k).text();
+              $('.room > p:nth-of-type(2)').html(` <span class="material-symbols-outlined">
+              bed
+          </span>
+          ${txt}`);
+
+            })
           
 
           });
@@ -94,6 +113,9 @@ let popup = $('.submitpopup');
   $('.submitbox').on('click',function(){
     event.preventDefault();
     $(popup).addClass('active')
+    $('.datepop').removeClass('active')
+    $('.personpop').removeClass('active')
+    $('.roompop').removeClass('active')
  
   });
 
@@ -107,6 +129,8 @@ let popup = $('.submitpopup');
 
 $('.room').on('click',function(){
   
+  $('.datepop').removeClass('active')
+  $('.personpop').removeClass('active')
   
   if($('.roompop').hasClass('active')){
     $('.roompop').removeClass('active')
@@ -120,7 +144,9 @@ $('.room').on('click',function(){
 
 $('.date').on('click',function(){
 
-  
+  $('.roompop').removeClass('active')
+  $('.personpop').removeClass('active')
+
   if($('.datepop').hasClass('active')){
     $('.datepop').removeClass('active')
   }
@@ -134,6 +160,9 @@ $('.date').on('click',function(){
 
 $('.person').on('click',function(){
  
+  $('.roompop').removeClass('active')
+  $('.datepop').removeClass('active')
+
 
   if($('.personpop').hasClass('active')){
     $('.personpop').removeClass('active')
@@ -152,3 +181,65 @@ $('.roompop ul li').each(function(k,v){
   // $.each(data.Love,function(k,v){
 
   // });
+
+  total = 0;
+  ad = 0;
+  ch = 0;
+  bb = 0;
+
+
+
+$('.adult > button').eq(0).on('click',function(){
+  if(ad>0){
+    ad--;
+    total--;
+    
+  }
+  $('.adult > p').text(ad) 
+})
+$('.adult > button').eq(1).on('click',function(){
+  if(ad >=0&&total < 6){
+    ad++;
+    total++;
+   
+  }
+  $('.adult > p').text(ad)
+  $('.person > p >span').eq(0).text(ad)
+})
+
+$('.child > button').eq(0).on('click',function(){
+  if(ch>0){
+    ch--;
+    total--;
+    
+  }
+  $('.child > p').text(ch) 
+})
+$('.child > button').eq(1).on('click',function(){
+  if(ch >=0&&total < 6){
+    ch++;
+    total++;
+   
+  }
+  $('.child > p').text(ch)
+  $('.person > p >span').eq(1).text(ch)
+})
+
+$('.baby > button').eq(0).on('click',function(){
+  if(bb>0){
+    bb--;
+    total--;
+    
+  }
+  $('.baby > p').text(bb) 
+})
+$('.baby > button').eq(1).on('click',function(){
+  if(bb >=0&&total < 6){
+    bb++;
+    total++;
+   
+  }
+  $('.baby > p').text(bb)
+  $('.person > p >span').eq(2).text(bb)
+})
+

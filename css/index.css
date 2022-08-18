@@ -147,8 +147,19 @@ div.reservation > div >  div >p{
 .datepop > div{
     width: 100%;
     height: 80%;
-    background-color: #ddd;
+    /* background-color: #ddd; */
 
+}
+.fc-toolbar-title{
+    font-size: 16px !important;
+}
+
+.fc-button{
+width: 40px;
+height: 30px;
+font-size: 10px !important;
+background-color: #17CBA0 !important;
+border: none !important;
 }
 
 .date > p >span{
@@ -568,7 +579,7 @@ div.nav_img{
     margin: 5% auto;
     width: 90%;
     height: 200px;
-    background-color: #ddd;
+  
 
 }
 .person-1{
@@ -605,7 +616,7 @@ div.nav_img{
         transform: translateX(15%);
     }
 
-
+    
 
 
     div.reservation{
@@ -664,6 +675,7 @@ div.nav_img{
     .mobile-1{
         display: block;
     }
+    
 
 
     div.submitbox{
@@ -871,7 +883,7 @@ div.nav_img{
         transform: translateX(15%);
     }
 
-
+    
 
     div.reservation{
         width: 100%;
@@ -929,7 +941,7 @@ div.nav_img{
     .mobile-1{
         display: block;
     }
-
+  
 
     div.submitbox{
         width: 100%;

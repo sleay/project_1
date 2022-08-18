@@ -84,8 +84,8 @@ var swiper = new Swiper(".mySwiper", {
             $('.roompop ul').append(elList2)
 
             let txt= ''
-            $('.list > div > div > button').eq(k).on('click',function(){
-              txt=$('.list > p').eq(k).text();
+            $('.list > div > div > button').on('click',function(){
+              txt=$(this).parents('.list').find('>p').text();
               $('.room > p:nth-of-type(2)').html(` <span class="material-symbols-outlined">
               bed
           </span>
@@ -243,3 +243,43 @@ $('.baby > button').eq(1).on('click',function(){
   $('.person > p >span').eq(2).text(bb)
 })
 
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth'
+    });
+    calendar.render();
+  });
+
+  if (matchMedia("screen and (min-width: 1024px)").matches) {
+    $('.datepop').html("<div id='calendar'></div>")
+    $('.mobile-1').html('')
+  } else {
+    $('.mobile-1').html("<div id='calendar'></div>")
+    $('.datepop').html('')
+
+    $('.room').on('click',function(){
+  
+      $('.datepop').removeClass('active')
+      $('.personpop').removeClass('active')
+      $('.roompop').removeClass('active')
+      
+    })
+    
+    
+    $('.date').on('click',function(){
+      $('.datepop').removeClass('active')
+      $('.personpop').removeClass('active')
+      $('.roompop').removeClass('active')
+    });
+    
+    
+    $('.person').on('click',function(){
+      $('.datepop').removeClass('active')
+      $('.personpop').removeClass('active')
+      $('.roompop').removeClass('active')
+    });
+
+
+  }

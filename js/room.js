@@ -75,6 +75,9 @@ $.ajax({
 
                   
                     const List = $('.content-1 .contentbox1 ul li:nth-of-type(2)');
+
+                    
+
                     List.html(
                         `
                         <div><img src=${data.Love[key].Pr.b0} alt=""></div>

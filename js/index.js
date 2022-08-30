@@ -57,13 +57,18 @@ var swiper = new Swiper(".mySwiper", {
           </span>
           ${txt}`);
 
+              $('.pop_img > div >img').attr('src',`${v.Pr.b0}`)
+              $('.pop_img > div> div >img').eq(0).attr('src',`${v.Smpr.b1}`)
+              $('.pop_img > div> div >img').eq(1).attr('src',`${v.Smpr.b2}`)
+              $('.pop_img > div> div >img').eq(2).attr('src',`${v.Smpr.b3}`)
+              $('.pop_img > p').text(txt)
             })
 
           });
           $.each(data.Only,function(k,v){
 
             elList2 = `
-              <li class="list">
+              <li class="list a1">
                   <p>ONLYYOU ${v.roomNo}호</p>
                   <div>
                       <div>
@@ -84,24 +89,45 @@ var swiper = new Swiper(".mySwiper", {
             $('.roompop ul').append(elList2)
 
             let txt= ''
-            $('.list > div > div > button').on('click',function(){
-              txt=$(this).parents('.list').find('>p').text();
+
+
+            $('.a1 > div > div > button').eq(k).on('click',function(){
+              txt=$('.a1 > p').eq(k).text();
               $('.room > p:nth-of-type(2)').html(` <span class="material-symbols-outlined">
               bed
           </span>
           ${txt}`);
 
+              $('.pop_img > div >img').attr('src',`${v.Pr.b0}`)
+              $('.pop_img > div> div >img').eq(0).attr('src',`${v.Smpr.b1}`)
+              $('.pop_img > div> div >img').eq(1).attr('src',`${v.Smpr.b2}`)
+              $('.pop_img > div> div >img').eq(2).attr('src',`${v.Smpr.b3}`)
+
+              $('.pop_img > p').text(txt)
             })
+
+
+
+
+
+            
+          //   $('.list > div > div > button').on('click',function(){
+          //     txt=$(this).parents('.list').find('>p').text();
+
+              
+
+          //     $('.room > p:nth-of-type(2)').html(` <span class="material-symbols-outlined">
+          //     bed
+          // </span>
+          // ${txt}`);
+          //     $('.pop_img > p').text(txt)
+
+          //   })
           
 
           });
 
-          $('.list').on('click',function(){
-            $(this).text()
-            console.log($(this).html().src)
-          
-          });
-
+        
 
 
       }
@@ -211,7 +237,9 @@ $('.adult > button').eq(0).on('click',function(){
     total--;
     
   }
-  $('.adult > p').text(ad) 
+  $('.adult > p').text(ad)
+  $('.person > p >span').eq(0).text(ad) 
+  $('.count').eq(0).text(ad)
 })
 $('.adult > button').eq(1).on('click',function(){
   if(ad >=0&&total < 6){
@@ -221,6 +249,7 @@ $('.adult > button').eq(1).on('click',function(){
   }
   $('.adult > p').text(ad)
   $('.person > p >span').eq(0).text(ad)
+  $('.count').eq(0).text(ad)
 })
 
 $('.child > button').eq(0).on('click',function(){
@@ -230,6 +259,9 @@ $('.child > button').eq(0).on('click',function(){
     
   }
   $('.child > p').text(ch) 
+  $('.person > p >span').eq(1).text(ch)
+  $('.count').eq(1).text(ch)
+
 })
 $('.child > button').eq(1).on('click',function(){
   if(ch >=0&&total < 6){
@@ -239,6 +271,7 @@ $('.child > button').eq(1).on('click',function(){
   }
   $('.child > p').text(ch)
   $('.person > p >span').eq(1).text(ch)
+  $('.count').eq(1).text(ch)
 })
 
 $('.baby > button').eq(0).on('click',function(){
@@ -248,6 +281,8 @@ $('.baby > button').eq(0).on('click',function(){
     
   }
   $('.baby > p').text(bb) 
+  $('.person > p >span').eq(2).text(bb)
+  $('.count').eq(2).text(bb)
 })
 $('.baby > button').eq(1).on('click',function(){
   if(bb >=0&&total < 6){
@@ -257,6 +292,7 @@ $('.baby > button').eq(1).on('click',function(){
   }
   $('.baby > p').text(bb)
   $('.person > p >span').eq(2).text(bb)
+  $('.count').eq(2).text(bb)
 })
 
 

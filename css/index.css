@@ -533,7 +533,9 @@ div.submitbox{
     display: flex;
     justify-content: space-between;
 }
-
+.pay_sm > div:nth-of-type(2)  span{
+    color: #f00;
+}
 .pop_pay button{
     width: 100%;
     height: 80px;
@@ -543,7 +545,7 @@ div.submitbox{
     color: #fff;
 }
 
-.bold{
+span.bold{
     font: normal 14px "san_serif_bold";
 }
 

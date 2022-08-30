@@ -1,9 +1,13 @@
 @import url('./common.css');
 
 .slide_img{
+    display: flex;
+    
     position: relative;
     width: 100%;
+    
     margin-top: 100px;
+    overflow: hidden;
 }
 .slide_img > h2{
     position: absolute;
@@ -16,6 +20,8 @@
 }
 .slide_img > div{
     position: relative;
+    flex-shrink: 0;
+    transition: 0.3s;
 }
 .slide_img > div >p{
     background-color: #000;
@@ -78,10 +84,14 @@ img.icon{
     width: 1280px;
     margin: 0 auto;
     background-color: #FBFBFB;
+    overflow: hidden;
+    display: flex;
 }
 .content-2 >ul{
     width: 100%;
     padding: 220px 0 230px;
+    flex-shrink: 0;
+    transition: 0.3s;
 }
 .content-2 >ul >li{
     display: flex;
@@ -101,6 +111,7 @@ img.icon{
 }
 
 div.slide_btn_1{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +138,7 @@ div.slide_btn_2 > span{
 }
 
 div.slide_btn_2{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;

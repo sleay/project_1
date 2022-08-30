@@ -117,11 +117,27 @@ let popup = $('.submitpopup');
     $('.personpop').removeClass('active')
     $('.roompop').removeClass('active')
  
+    if( $(popup).hasClass('active')){
+      $('body').css({overflow:'hidden'})
+    }
+    
+
+
+
   });
+
+ 
+
+  $('.closebtn').on('click',function(){
+    $(popup).removeClass('active')
+    $('body').css({overflow:'auto'})
+  })
+
 
   $(popup).on('click',function(){
     if(event.target.classList.contains('active')){
       $(popup).removeClass('active')   
+        $('body').css({overflow:'auto'})
   }
   })
 

@@ -389,36 +389,174 @@ div.submitbox{
  display: flex;
 }
 .submitpopup >div{
+    position: relative;
     width: 50%;
     height: 50%;
+    padding: 20px;
     background-color: #fff;
     display: flex;
-    padding: 2%;
+    justify-content: space-between;
+
 }
+.closebtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px #000;
+    cursor: pointer;
+    
+}
+.closebtn > span{
+    font: normal 20px "san_serif_bold";
+}
+
+.pop_img{
+    width: calc(50% + 20px);
+    height: 100%;
+}
+.pop_img > p{
+    font: normal 20px "san_serif_bold";
+    margin-bottom: 14px;
+}
+.pop_img > div{
+    width: 100%;
+    height: calc(100% - 47px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.pop_img > div > img{
+    display: block;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+.pop_img > div > div{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pop_img > div > div > img{
+    display: block;
+    width: 30%;
+    object-fit: cover;
+
+}
+
+.pop_pay span{
+    font: normal 14px "san_serif_medium";
+}
+
+.pop_pay{
+    width: calc(35% - 20px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+.day_sm{
+    width: 100%;
+    padding: 17px 15px 0;
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 10%;
+
+}
+.day_sm > span:first-of-type{
+    font: normal 14px "san_serif_bold";
+}
+
+.person_sm{
+    width: 100%;
+    padding: 0 15px;
+    
+}
+.person_sm >p{
+    font: normal 14px "san_serif_bold";
+    margin-bottom: 10%;
+}
+.person_sm >div{
+    display: flex;
+    justify-content: space-between;
+}
+.person_sm >div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pay_sm{
+    width: 100%;
+}
+
+.pay_sm > p{
+    margin-bottom: 5%;
+    font: normal 14px "san_serif_bold";
+    padding: 0 15px;
+
+}
+.pay_sm > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.pay_sm > div:first-of-type::after{
+    content: '';
+    display: block;
+    transform: translateX(-15px);
+    width: calc(100% + 30px);
+    border: solid 1px #000;
+    margin-top: 10px;
+    
+}
+
+.pay_sm > div:first-of-type >div{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.pay_sm > div:nth-of-type(2){
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop_pay button{
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #FF5B5B;
+    font: normal 20px "san_serif_bold";
+    color: #fff;
+}
+
+.bold{
+    font: normal 14px "san_serif_bold";
+}
+
+
+
+
+
 
 .data{
     width: 70%;
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 div.tag{
